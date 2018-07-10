@@ -1,1 +1,168 @@
-hello world
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Faye Butler Portfolio Site</title>
+
+  <meta name="description" content="A portfolio site for Faye Butler">
+
+  <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <!-- For IE 10 and below just place a file called favicon.ico in the root directory -->
+  <!-- <link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+  <link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+  <link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+  <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+  <link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+  <link href="/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+  <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+  <link href="/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+  <link href="/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+  <link href="/favicon-48x48.png" rel="icon" type="image/png" sizes="48x48">
+  <link href="/favicon-64x64.png" rel="icon" type="image/png" sizes="64x64">
+  <link href="/favicon-96x96.png" rel="icon" type="image/png" sizes="96x96">
+  <link href="/android-chrome-192x192.png" rel="icon" type="image/png" sizes="192x192">
+  <link href="/safari-pinned-tab.svg" rel="mask-icon" color="#000000">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff"> -->
+
+  <!-- Open Graph protocol  -->
+  <!-- <meta property="og:title" content="Content Title">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://example.com/image.jpg">
+  <meta property="og:url" content="https://example.com/page.html">
+  <meta property="og:description" content="Description">
+  <meta property="og:site_name" content="Site name">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:author" content="Author name">  -->
+
+
+</head>
+<body>
+  <div id="header">
+    <div id="header-img">
+      <img src="images/yosemite_river.jpg" />
+    </div>
+    <div id="header-text">
+      <h1>Faye Butler</h1>
+      <p>faye.alexandra.butler1@gmail.com</p>
+      <p id="contact"><a href="https://github.com/fayebutler" target="_blank"><i class="fab fa-github"></i></a> <a href="https://www.linkedin.com/in/faye-butler-579112a0/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+    </div>
+  </div>
+  <div id="main">
+    <div class="section">
+      <div class="section-header">
+        <h2>Info</h2>
+      </div>
+      <div class="section-text">
+        <p>Date of birth: 12/02/1994</p>
+        <p></p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">
+        <h2>Experience</h2>
+      </div>
+      <div class="section-text">
+        <div class="experience-section">
+          <a href="http://thinkjam.com/" target="_blank"><h3>Think Jam</h3></a>
+          <h4>Oct 2016 - Apr 2018</h4>
+          <p>I was initially hired as a Junior Developer but promoted to Developer after my first year. I worked in a team of three to create HTML5 adverts and bespoke advertising creative for our clients and tools for our internal teams.</p>
+          <p>Roles</p>
+          <ul>
+            <li>Creating HTML5 ads for various clients, including 20th Century Fox, Warner Bros etc from photoshop files.</li>
+            <li>Using multiple ad platforms: Sizmek, DoubleClick, adform, monet and celtra.</li>
+            <li>Maintaining and building wordpress sites from scratch for internal projects.</li>
+            <li>Creating and managing in-house tools to help improve work efficiency. </li>
+          </ul>
+          <p>Projects</p>
+          <div class="projects">
+            <div class="project">
+              <p><i class="fas fa-caret-right" data-id="ww"></i> Wonder Woman</p>
+              <p class="project-desc" id="ww"><a href="https://premiere.wonderwomanfilm.com/intl/uk/" target="_blank">Link to site</a><br>I worked with producers and designers to create a progressive web app to be used at the Wonder Woman Premieres across many territories. The app allowed you to take photos, add Wonder Woman stickers, save and share your final photo. The photos are saved to an s3 bucket for moderation then pulled from the approved list into a gallery on the site. This was mostly written in php with gulp automation, I also had to make sure it was fully templated as it then had to be localised into multiple languages.</p>
+            </div>
+            <div class="project">
+              <p><i class="fas fa-caret-right" data-id="tgd"></i>The Good Doctor</p>
+              <p class="project-desc" id="tgd">After being granted access to Facebook's beta AR Studio I quickly had to learn how to use it and create an AR filter that included multiple elements and triggers for ABC. This was a particularly difficult project as we had many iterations and feedback and communication had to be planned well as we were working with a client in the US.</p>
+            </div>
+            <div class="project">
+              <p><i class="fas fa-caret-right" data-id="twbt"></i>Twitter Bot</p>
+              <p class="project-desc" id="twbt"></p>
+            </div>
+            <div class="project">
+              <p><i class="fas fa-caret-right" data-id="jlvr"></i>Justice League VR</p>
+              <p class="project-desc" id="jlvr">For a pitch I learnt A-Frame, a webVR framework, and created a point and shoot game in VR/360 for Justice League. It works in the browser, mobile and in google cardboard.</p>
+            </div>
+            <div class="project">
+              <p><i class="fas fa-caret-right" data-id="msgbd"></i>Message Bird Emergency Response</p>
+              <p class="project-desc" id="msgbd">Message bird is an internal tool that the HR team use to text everyone in the company at once with emergency updates. Some of these require replies to show the person is safe - I created an internal site that shows who has and hasn't replied within 24 hours.</p>
+            </div>
+            <div class="project">
+              <p><i class="fas fa-caret-right" data-id="tgs"></i>The Greatest Showman</p>
+              <p class="project-desc" id="tgs">A website takeover ad I created that had quite a few components and some fun animation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-section">
+          <a href="http://www.gamer-network.net/ " target="_blank"><h3>Gamer Network</h3></a>
+          <h4>Oct 2015 - Oct 2016</h4>
+          <p>I worked for a year as junior developer for a company that host game websites in a team of 8.</p>
+          <p>Roles</p>
+          <ul>
+            <li>Creating adverts to go on multiple sites, using HTML/CSS/javascript in DFP.</li>
+            <li>Maintaining and creating features for wordpress websites.</li>
+            <li>Maintaining and updating websites using php.</li>
+            <li>Working with designers to create template websites for indie game developers on square space.</li>
+          </ul>
+          <p>Projects</p>
+          <div class="projects">
+            <div class="project">
+              <p><i class="fas fa-caret-right" data-id="sts"></i>Statistics Reporting</p>
+              <p class="project-desc" id="sts"><a href="https://github.com/gamernetwork/gastatsdash " target="_blank">Github project</a><br>I refactored and improved a tool that creates and sends reports from google analytics data, involves aggregating and organising a large amount of data from different properties. Written in python using the google api and Jinja template language.</p>
+            </div>
+            <div class="project">
+              <p><i class="fas fa-caret-right" data-id="strk"></i>Strikeclub</p>
+              <p class="project-desc" id="strk"><a href="www.strikeclub.uk" target="_blank">Site</a><br><a href="https://github.com/gamernetwork/strikeclub.uk" target="_blank">Github project</a><br>I created a one page event website working with a designer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-header">
+        <h2>Education</h2>
+      </div>
+      <div class="section-text">
+        <div class="experience-section">
+          <h3>Bournemouth University - BA (HONS) COMPUTER VISUALISATION & ANIMATION</h3>
+          <h4>SEPT 2012 - JUNE 2015</h4>
+          <p>Graduated with a 2:1. Final showreel: https://vimeo.com/135377508 </p>
+          <p>Relevant Projects</p>
+          <ul>
+            <li>Third Year Computing for Animation - working in a group of five to produce a real time crowd simulation game using c++, openGL and lua. https://vimeo.com/135365226 </li>
+            <li>Third Year Major Project - working in a pair to create a live action film about augmented reality with photo real visual effects, using Houdini to produce the visual effects. https://vimeo.com/135363462 </li>
+            <li>Third Year Innovations - working individually to produce an abstract real time audio reactive piece. https://vimeo.com/136652972 </li>
+            <li>Third Year Masterclass - working individually in Houdini on a project set by visual effects company Double Negative to procedurally disintegrate a zombie. https://vimeo.com/176936880 </li>
+            <li>Second Year Computing for Animation - worked alone to create a game using c++, openGL and bullet physics. https://vimeo.com/135363460</li>
+            <li>Other units completed in this degree: Maths for Computer Graphics, Animation, Life Drawing, Cinematography, Design.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+  <script src="js/main.js" async></script>
+</body>
+</html>
