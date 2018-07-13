@@ -1,0 +1,204 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    border: 1px solid #ed1b35;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+}
+
+img, video {
+    position: absolute;
+}
+
+.exit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor:pointer;
+}
+
+
+/** RESOLVE **/
+#resolve_tt {
+  animation-delay:1.6s;
+  -webkit-animation-delay:1.6s;
+}
+#resolve_director {
+  animation-delay:2s;
+  -webkit-animation-delay:2s;
+}
+#resolve_date {
+  animation-delay:2.4s;
+  -webkit-animation-delay:2.4s;
+}
+#resolve_cta, #resolve_legals {
+  animation-delay:2.8s;
+  -webkit-animation-delay:2.8s;
+}
+
+
+
+
+
+/** ANIMATIONS **/
+
+.introAnimSeq {
+  position:absolute;
+  width:300px;
+  height:250px;
+  background-image:url('anim_seq.png');
+  animation-timing-function: steps(20);
+  -webkit-animation-timing-function: steps(20);
+  animation-duration:0.875s;
+  -webkit-animation-duration:0.875s;
+  animation-delay:1.5s;
+  -webkit-animation-delay:1.5s;
+  animation-name: introAnimSeq;
+  -webkit-animation-name: introAnimSeq;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+@-webkit-keyframes introAnimSeq {
+	0% {
+    background-position:left 0px;
+  }
+	100% {
+    background-position:left -5040px;
+  }
+}
+@keyframes introAnimSeq {
+	0% {
+    background-position:left 0px;
+  }
+	100% {
+    background-position:left -5040px;
+  }
+}
+
+.resolveAnimSeq {
+  position:absolute;
+  width:300px;
+  height:250px;
+  opacity:0;
+  background-image:url('anim_seq.png');
+  animation-timing-function: steps(4);
+  -webkit-animation-timing-function: steps(4);
+  animation-duration:0.2s;
+  -webkit-animation-duration:0.2s;
+  animation-delay:3.5s;
+  -webkit-animation-delay:3.5s;
+  animation-name: resolveAnimSeq;
+  -webkit-animation-name: resolveAnimSeq;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes resolveAnimSeq {
+	0% {
+    opacity:1;
+    background-position:left -5040px;
+  }
+	100% {
+    opacity:1;
+    background-position:left -4032px;
+  }
+}
+@keyframes resolveAnimSeq {
+	0% {
+    opacity:1;
+    background-position:left -5040px;
+  }
+	100% {
+    opacity:1;
+    background-position:left -4032px;
+  }
+}
+
+.smoke {
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-name: smoke;
+	animation-name: smoke;
+  transform-origin: bottom;
+  -webkit-transform-origin: bottom;
+}
+@-webkit-keyframes smoke {
+  0% {
+    opacity: 1;
+    -webkit-transform:scale(0.1) translateY(-400px);
+  }
+  15% {
+    opacity:1;
+    transform:scale(0.4) translateY(-200px);
+  }
+	100% {
+    opacity: 0;
+    transform:scale(0.8) translateY(-100px);
+  }
+}
+@keyframes smoke {
+	0% {
+    opacity: 1;
+    transform:scale(0.1) translateY(-400px);
+  }
+  15% {
+    opacity:1;
+    transform:scale(0.4) translateY(-200px);
+  }
+	100% {
+    opacity: 0;
+    transform:scale(0.8) translateY(-100px);
+  }
+}
+
+
+.fadeIn {
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.fadeOut {
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+@-webkit-keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+@keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}

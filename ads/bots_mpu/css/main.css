@@ -1,0 +1,722 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    border: 1px solid #ffd500;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+}
+
+img {
+    position: absolute;
+}
+
+.exit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* Animation order key */
+/* @keyframes duration | timing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+
+
+/* --- Main Content --- */
+
+
+/* INTRO */
+
+#intro_lines_top {
+    width: 0px;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../images/intro_lines.png');
+    background-position: center top;
+    animation: 0.5s linear both introLines, 0.5s linear 5s forwards fadeOut;
+    -webkit-animation: 0.5s linear both introLines, 0.5s linear 5s forwards fadeOut;
+}
+
+#intro_lines_bottom {
+    width: 0px;
+    height: 25px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../images/intro_lines.png');
+    background-position: center bottom;
+    animation: 0.5s linear both introLines, 0.5s linear 5s forwards fadeOut;
+    -webkit-animation: 0.5s linear both introLines, 0.5s linear 5s forwards fadeOut;
+}
+
+#intro_one_lines {
+    width: 0px;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../images/intro_one_lines.png');
+    background-position: center;
+    animation: 0.5s linear both introOneLine, 0.1s linear 3s forwards fadeOut;
+    -webkit-animation: 0.5s linear both introOneLine, 0.1s linear 3s forwards fadeOut;
+}
+
+#intro_one_red_text {
+    width: 300px;
+    height: 18px;
+    position: absolute;
+    left: 0px;
+    top: 145px;
+    background-image: url('../images/intro_one_red_text.png');
+    background-position: 0 -145px;
+    animation: 0.5s ease 0.6s normal both introRedText, 0.1s linear 3s forwards fadeOut;
+    -webkit-animation: 0.5s ease 0.6s normal both introRedText, 0.1s linear 3s forwards fadeOut;
+}
+
+#intro_one_moving_text {
+    width: 300px;
+    height: 38px;
+    position: absolute;
+    top: 106px;
+    left: 0px;
+    background-image: url('../images/intro_one_moving_text.png');
+    background-position: 0 -106px;
+    animation: 0.3s ease 0.6s normal both introMovingText, 0.1s linear 3s forwards fadeOut;
+    -webkit-animation: 0.3s ease 0.6s normal both introMovingText, 0.1s linear 3s forwards fadeOut;
+}
+
+#intro_one_fresh_text {
+    width: 300px;
+    height: 22px;
+    position: absolute;
+    top: 84px;
+    left: 0px;
+    background-image: url('../images/intro_one_fresh_text.png');
+    background-position: 0 -84px;
+    animation: 0.3s ease 0.8s normal both introFreshText, 0.1s linear 3s forwards fadeOut;
+    -webkit-animation: 0.3s ease 0.8s normal both introFreshText, 0.1s linear 3s forwards fadeOut;
+}
+
+#intro_one_funny_text {
+    width: 300px;
+    height: 38px;
+    position: absolute;
+    top: 46px;
+    left: 0px;
+    background-image: url('../images/intro_one_funny_text.png');
+    background-position: 0 -46px;
+    animation: 0.3s ease 1s normal both introFunnyText, 0.1s linear 3s forwards fadeOut;
+    -webkit-animation: 0.3s ease 1s normal both introFunnyText, 0.1s linear 3s forwards fadeOut;
+}
+
+#intro_one_fantastically_text {
+    width: 300px;
+    height: 18px;
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    background-image: url('../images/intro_one_fantastically_text.png');
+    background-position: 0 -28px;
+    animation: 0.3s ease 1.2s normal both introFantasticallyText, 0.1s linear 3s forwards fadeOut;
+    -webkit-animation: 0.3s ease 1.2s normal both introFantasticallyText, 0.1s linear 3s forwards fadeOut;
+}
+
+#intro_one_diva_text {
+    width: 300px;
+    height: 42px;
+    position: absolute;
+    top: 208px;
+    left: 0px;
+    background-image: url('../images/intro_one_diva_text.png');
+    background-position: 0 -208px;
+    animation: 0.3s ease 0.6s normal both introDivaText, 0.1s linear 3s forwards fadeOut;
+    -webkit-animation: 0.3s ease 0.6s normal both introDivaText, 0.1s linear 3s forwards fadeOut;
+}
+
+#intro_one_stars_text {
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 156px;
+    left: 0px;
+    background-image: url('../images/intro_one_stars_text.png');
+    background-position: 0 -568px;
+    animation: 0.3s ease 0.6s normal both introStarText, 0.1s linear 3s forwards fadeOut;
+    -webkit-animation: 0.3s ease 0.6s normal both introStarText, 0.1s linear 3s forwards fadeOut;
+}
+
+#intro_two_text {
+    display: none;
+}
+
+#intro_two_middle_lines {
+    width: 0px;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../images/intro_two_middle_lines.png');
+    background-position: center;
+    animation: 0.5s linear both introOneLine, 0.1s linear 2.5s forwards fadeOut;
+    -webkit-animation: 0.5s linear both introOneLine, 0.1s linear 2.5s forwards fadeOut;
+}
+
+#intro_two_award_text {
+    animation: 0.5s linear normal both fadeIn, 0.1s linear 2.5s forwards fadeOut;
+    -webkit-animation: 0.5s linear normal both fadeIn, 0.1s linear 2.5s forwards fadeOut;
+    top: 0px;
+    left: 0px;
+}
+
+#intro_two_emma_text {
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url('../images/intro_two_emma_text.png');
+    background-position: 0 30px;
+    animation: 0.5s ease normal both introEmmaText, 0.1s linear 2.5s forwards fadeOut;
+    -webkit-animation: 0.5s ease normal both introEmmaText, 0.1s linear 2.5s forwards fadeOut;
+}
+
+#intro_two_stone_text {
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    background-image: url('../images/intro_two_stone_text.png');
+    background-position: 0 -112px;
+    animation: 0.5s ease normal both introStoneText, 0.1s linear 2.5s forwards fadeOut;
+    -webkit-animation: 0.5s ease normal both introStoneText, 0.1s linear 2.5s forwards fadeOut;
+}
+
+#intro_two_steve_text {
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 138px;
+    left: 0px;
+    background-image: url('../images/intro_two_steve_text.png');
+    background-position: 0px -138px;
+    animation: 0.5s ease normal both introSteveText, 0.1s linear 2.5s forwards fadeOut;
+    -webkit-animation: 0.5s ease normal both introSteveText, 0.1s linear 2.5s forwards fadeOut;
+}
+
+#intro_two_carell_text {
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    top: 190px;
+    left: 0px;
+    background-image: url('../images/intro_two_carell_text.png');
+    background-position: 0 -190px;
+    animation: 0.5s ease normal both introCarellText, 0.1s linear 2.5s forwards fadeOut;
+    -webkit-animation: 0.5s ease normal both introCarellText, 0.1s linear 2.5s forwards fadeOut;
+}
+
+
+/* RESOLVE */
+
+#resolve {
+    display: none;
+}
+
+#background {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0px;
+    left: 0px;
+    background-image: url('../images/background.jpg');
+    background-position: 0px 0px;
+}
+
+.resolve_art {
+    animation: 0.8s ease both slideArt;
+    -webkit-animation: 0.8s ease both slideArt;
+}
+
+#resolve_tt_battle {
+    position: absolute;
+    width: 185px;
+    height: 250px;
+    top: 0px;
+    left: 0px;
+    background-image: url('../images/resolve_tt.png');
+    background-position: 185px 0px;
+    background-repeat: no-repeat;
+    animation: 0.3s linear 0.5s both ttBattle;
+    -webkit-animation: 0.3s linear 0.5s both ttBattle;
+}
+
+#resolve_tt_sexes {
+    position: absolute;
+    width: 115px;
+    height: 250px;
+    top: 0px;
+    left: 185px;
+    background-image: url('../images/resolve_tt.png');
+    background-position: -300px 0px;
+    background-repeat: no-repeat;
+    animation: 0.3s linear 0.5s both ttSexes;
+    -webkit-animation: 0.3s 0.5s linear both ttSexes;
+}
+
+#resolve_date {
+    animation: 0.5s ease 0.8s both fadeIn;
+    -webkit-animation: 0.5s ease 0.8s both fadeIn;
+}
+
+#resolve_tagline {
+    animation: 0.5s ease 0.8s both fadeIn;
+    -webkit-animation: 0.5s ease 0.8s both fadeIn;
+}
+
+#resolve_legal {
+    animation: 0.5s ease 0.8s both fadeIn;
+    -webkit-animation: 0.5s ease 0.8s both fadeIn;
+}
+
+#resolve_cta {
+    position: absolute;
+    width: 122px;
+    height: 30px;
+    background-image: url("../images/resolve_cta_off.png");
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    left: 160px;
+    bottom: 6px;
+    animation: 0.5s ease 0.8s both fadeIn;
+    -webkit-animation: 0.5s ease 0.8s both fadeIn;
+}
+
+#resolve_cta:hover {
+    background-image: url("../images/resolve_cta_on.png");
+}
+
+
+/* --- Animations --- */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(100%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes slideArt {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 0px -236px;
+    }
+}
+
+@-webkit-keyframes slideArt {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 0px -236px;
+    }
+}
+
+@keyframes ttBattle {
+    0% {
+        background-position: 185px 0px;
+    }
+    100% {
+        background-position: 0px 0px;
+    }
+}
+
+@-webkit-keyframes ttBattle {
+    0% {
+        background-position: 185px 0px;
+    }
+    100% {
+        background-position: 0px 0px;
+    }
+}
+
+@keyframes ttSexes {
+    0% {
+        background-position: -300px 0px;
+    }
+    100% {
+        background-position: -185px 0px;
+    }
+}
+
+@-webkit-keyframes ttSexes {
+    0% {
+        background-position: -300px 0px;
+    }
+    100% {
+        background-position: -185px 0px;
+    }
+}
+
+@keyframes introCarellText {
+    0% {
+        background-position: 0 -225px;
+    }
+    100% {
+        background-position: 0 -190px;
+    }
+}
+
+@-webkit-keyframes introCarellText {
+    0% {
+        background-position: 0 -225px;
+    }
+    100% {
+        background-position: 0 -190px;
+    }
+}
+
+@keyframes introSteveText {
+    0% {
+        background-position: 0 -110px;
+    }
+    100% {
+        background-position: 0 -138px;
+    }
+}
+
+@-webkit-keyframes introSteveText {
+    0% {
+        background-position: 0 -110px;
+    }
+    100% {
+        background-position: 0 -138px;
+    }
+}
+
+@keyframes introStoneText {
+    0% {
+        background-position: 0 -112px;
+    }
+    100% {
+        background-position: 0 -80px;
+    }
+}
+
+@-webkit-keyframes introStoneText {
+    0% {
+        background-position: 0 -112px;
+    }
+    100% {
+        background-position: 0 -80px;
+    }
+}
+
+@keyframes introEmmaText {
+    0% {
+        background-position: 0 30px;
+    }
+    100% {
+        background-position: 0 0px;
+    }
+}
+
+@-webkit-keyframes introEmmaText {
+    0% {
+        background-position: 0 30px;
+    }
+    100% {
+        background-position: 0 0px;
+    }
+}
+
+@keyframes introDivaText {
+    0% {
+        background-position: 0 -230px;
+    }
+    100% {
+        background-position: 0 -208px;
+    }
+}
+
+@-webkit-keyframes introDivaText {
+    0% {
+        background-position: 0 -230px;
+    }
+    100% {
+        background-position: 0 -208px;
+    }
+}
+
+@keyframes introStarText {
+    0% {
+        background-position: 0 -106px;
+    }
+    100% {
+        background-position: 0 -156px;
+    }
+}
+
+@-webkit-keyframes introStarText {
+    0% {
+        background-position: 0 -106px;
+    }
+    100% {
+        background-position: 0 -156px;
+    }
+}
+
+@keyframes introAceText {
+    0% {
+        background-position: 0 20px;
+    }
+    100% {
+        background-position: 0 -60px;
+    }
+}
+
+@-webkit-keyframes introAceText {
+    0% {
+        background-position: 0 20px;
+    }
+    100% {
+        background-position: 0 -60px;
+    }
+}
+
+@keyframes introFilmText {
+    0% {
+        background-position: 0 5px;
+    }
+    100% {
+        background-position: 0 -30px;
+    }
+}
+
+@-webkit-keyframes introFilmText {
+    0% {
+        background-position: 0 5px;
+    }
+    100% {
+        background-position: 0 -30px;
+    }
+}
+
+@keyframes introRedText {
+    0% {
+        background-position: 0 -163px;
+    }
+    100% {
+        background-position: 0 -145px;
+    }
+}
+
+@-webkit-keyframes introRedText {
+    0% {
+        background-position: 0 -163px;
+    }
+    100% {
+        background-position: 0 -145px;
+    }
+}
+
+@keyframes introMovingText {
+    0% {
+        background-position: 0 -68px;
+    }
+    100% {
+        background-position: 0 -106px;
+    }
+}
+
+@-webkit-keyframes introMovingText {
+    0% {
+        background-position: 0 -68px;
+    }
+    100% {
+        background-position: 0 -106px;
+    }
+}
+
+@keyframes introFreshText {
+    0% {
+        background-position: 0 -62px;
+    }
+    100% {
+        background-position: 0 -84px;
+    }
+}
+
+@-webkit-keyframes introFreshText {
+    0% {
+        background-position: 0 -62px;
+    }
+    100% {
+        background-position: 0 -84px;
+    }
+}
+
+@keyframes introFunnyText {
+    0% {
+        background-position: 0 -8px;
+    }
+    100% {
+        background-position: 0 -46px;
+    }
+}
+
+@-webkit-keyframes introFunnyText {
+    0% {
+        background-position: 0 -8px;
+    }
+    100% {
+        background-position: 0 -46px;
+    }
+}
+
+@keyframes introFantastiallyText {
+    0% {
+        background-position: 0 -10px;
+    }
+    100% {
+        background-position: 0 -28px;
+    }
+}
+
+@-webkit-keyframes introFantasticallyText {
+    0% {
+        background-position: 0 -10px;
+    }
+    100% {
+        background-position: 0 -28px;
+    }
+}
+
+@keyframes introOneLine {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 300px;
+    }
+}
+
+@-webkit-keyframes introOneLine {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 300px;
+    }
+}
+
+@keyframes introLines {
+    0% {
+        width: 0px;
+        height: 25px;
+    }
+    50% {
+        width: 300px;
+        height: 25px
+    }
+    100% {
+        width: 300px;
+        height: 125px;
+    }
+}
+
+@-webkit-keyframes introLines {
+    0% {
+        width: 0px;
+        height: 25px;
+    }
+    50% {
+        width: 300px;
+        height: 25px
+    }
+    100% {
+        width: 300px;
+        height: 125px;
+    }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="$1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PS4_INT_Main_ss_master_GlacierWhite_300x250_std_150k</title>
+        <link type="text/css" rel="stylesheet" href="PS4_INT_Main_ss_master_GlacierWhite_300x250_std_150k.css">
+    </head>
+    <body>
+        <div id="wrapper">
+          <img id="ice-bg" class="shake" src="images/normal_ice.png" />
+          <div class="clipIn" id="cracked-ice"></div>
+          <div id="intro">
+            <img id="intro-text" class="slideTextRight" src="images/intro_text.png" />
+            <img id="intro-badge" class="zoomInBadge" src="images/intro_badge.png" />
+          </div>
+          <div id="resolve">
+              <img id="resolve-art" class="console-anim" src="images/resolve_art.png" />
+              <div id="smoke" ></div>
+              <img id="resolve-tt" class="slideRight" src="images/resolve_tt.png" />
+              <img id="resolve-tagline" class="slideRight" src="images/resolve_tagline.png" />
+              <img id="resolve-badge" class="slideLeft" src="images/resolve_badge.png" />
+              <img id="cta" class="slideRight" src="images/resolve_cta.png" />
+              <div id="cta-hover" class="slideRight">
+                <img id="shine" src="images/shine.png" />
+              </div>
+          </div>
+          <img id="lockup" class="flash" src="images/lockup.png" />
+        </div>
+        <script>
+          var cta_hover = document.getElementById("cta-hover");
+          var smoke = document.getElementById("smoke");
+          var lockup = document.getElementById("lockup");
+          cta_hover.addEventListener("mouseover", function(){
+            smoke.className = "smoke";
+            shine.className = "shine";
+          });
+          smoke.addEventListener("animationend", function() {
+            smoke.className = "";
+          });
+          shine.addEventListener("animationend", function() {
+            shine.className = "";
+          });
+          cta_hover.addEventListener("click", function(){
+            window.open("http://www.google.com", "_blank");
+          });
+          lockup.addEventListener("click", function() {
+            window.open("http://www.google.com", "_blank");
+          });
+        </script>
+    </body>
+</html>

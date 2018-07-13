@@ -15,9 +15,9 @@
 </head>
 <body>
   <div id="header">
-    <div id="header-img">
+    <a href="index.html" ><div id="header-img">
       <img src="images/profile.jpg" />
-    </div>
+    </div></a>
     <div id="header-text">
       <h1>Faye Butler</h1>
       <p>faye.alexandra.butler1@gmail.com</p>
@@ -33,7 +33,7 @@
         <div class="experience-section" id="ww">
           <h4>Wonder Woman Project</h4>
           <p>See the site <a href="https://premiere.wonderwomanfilm.com/intl/uk/" target="_blank">here</a>.</p>
-          <p>I worked with producers and designers to create a progressive web app to be used at the Wonder Woman Premieres across many territories. The app allowed you to take photos, add Wonder Woman stickers, save and share your final photo. The photos are saved to an s3 bucket for moderation then pulled from the approved list into a gallery on the site. This was mostly written in php with gulp automation, I also had to make sure it was fully templated as it then had to be localised into multiple languages.</p>
+          <p>I worked with producers and designers to create a progressive web app to be used at the Wonder Woman premieres across many territories. The app allowed you to take photos, add Wonder Woman stickers, save and share your final photo. The photos are saved to an s3 bucket for moderation then pulled from the approved list into a gallery on the site. This was mostly written in php with gulp automation, I also had to make sure it was fully templated as it then had to be localised into multiple languages.</p>
           <div class="video-container">
             <video src="videos/ww_app.mp4" controls></video>
           </div>
@@ -53,15 +53,36 @@
         </div>
         <div class="experience-section">
           <h4>Twitter Chat Bot</h4>
+          <p>When the new twitter direct messaging API came out I used my downtime to create a chat bot to try it out. I set up a webhook using Flask for python, the code is on my github account <a href="https://github.com/fayebutler/twitter_dm_bot" target="_blank">here</a>.</p>
+          <!-- <p>I've recently re-set this up and I'm looking into testing out some AI practices to make the bot more exciting.</p> -->
         </div>
         <div class="experience-section">
           <h4>The Greatest Showman Website Takeover</h4>
-          <p>See the ad showcased <a href="https://showcase.thinkjam.com/projects/the_greatest_showman/weischer/" target="_blank">here</a></p>
+          <p>See the ad showcased <a href="https://showcase.thinkjam.com/projects/the_greatest_showman/weischer/" target="_blank">here</a>. (Click 'Hier Vergrossern')</p>
+          <p>This is one of the biggest placements we had and I made many for the films we advertised for 20th Century Fox.</p>
+        </div>
+        <div class="experience-section">
+          <h4>Standard Ads</h4>
+          <p>50% of my time at Think Jam was creating HTML5 ads like these in different languages, sizes and branding.</p>
+          <div id="standard_ads">
+            <div class="standard_ad">
+              <iframe id="bots" width="300" height="250" src="ads/bots_mpu/index.html"></iframe>
+              <div class="reload" data-id="bots">Reload</div>
+            </div>
+            <div class="standard_ad">
+              <iframe id="iod" width="300" height="250" src="ads/iod_mpu/INT_Standard_300x250_IOD_SS_ExplosionAW_EN.html"></iframe>
+              <div class="reload" data-id="iod">Reload</div>
+            </div>
+            <div class="standard_ad">
+              <iframe id="ps4" width="300" height="250" src="ads/ps4_mpu/PS4_INT_Main_ss_master_GlacierWhite_300x250_std_150k.html"></iframe>
+              <div class="reload" data-id="ps4">Reload</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="section">
+    <!-- <div class="section">
       <div class="Section-header">
         <h2>Gamer Network</h2>
       </div>
@@ -71,6 +92,7 @@
           <p></p>
         </div>
       </div>
+    </div> -->
 
   </div>
   <script
