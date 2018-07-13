@@ -13,14 +13,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {
  text-decoration: none;
- color:#000;
+ color:#B46444;
 }
 a:hover {
- color:#B46444;
+ color:#000;
 }
 
 #main  {
-   background-color:#f4f4f4;
+   background-color:#fff;
    padding-bottom:50px;
    margin-left:300px;
  }
@@ -28,7 +28,6 @@ a:hover {
   width:100%;
   display:flex;
   margin:0 auto;
-  background-color:##f4f4f4;
   /* text-align: center; */
 }
 .section {
@@ -95,5 +94,18 @@ img {
 .fa-caret-right.rotate {
   transform:rotate(90deg);
   -webkit-transform:rotate(90deg);
+}
 
+
+
+
+
+/** EXPERIENCE PAGE SPECIFIC **/
+
+.video-section {
+  max-width:300px;
+  margin:0 auto;
+}
+video {
+  width:100%
 }

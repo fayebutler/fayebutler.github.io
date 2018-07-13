@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Faye Butler Portfolio Site</title>
+
+  <meta name="description" content="A portfolio site for Faye Butler">
+
+  <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+  <div id="header">
+    <div id="header-img">
+      <img src="images/profile.jpg" />
+    </div>
+    <div id="header-text">
+      <h1>Faye Butler</h1>
+      <p>faye.alexandra.butler1@gmail.com</p>
+      <p id="contact"><a href="https://github.com/fayebutler" target="_blank"><i class="fab fa-github"></i></a> <a href="https://www.linkedin.com/in/faye-butler-579112a0/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+    </div>
+  </div>
+  <div id="main">
+    <div class="section">
+      <div class="Section-header">
+        <h2>Think Jam</h2>
+      </div>
+      <div class="section-text">
+        <div class="experience-section" id="ww">
+          <h4>Wonder Woman Project</h4>
+          <p>See the site <a href="https://premiere.wonderwomanfilm.com/intl/uk/" target="_blank">here</a>.</p>
+          <p>I worked with producers and designers to create a progressive web app to be used at the Wonder Woman Premieres across many territories. The app allowed you to take photos, add Wonder Woman stickers, save and share your final photo. The photos are saved to an s3 bucket for moderation then pulled from the approved list into a gallery on the site. This was mostly written in php with gulp automation, I also had to make sure it was fully templated as it then had to be localised into multiple languages.</p>
+          <div class="video-container">
+            <video src="videos/ww_app.mp4" controls></video>
+          </div>
+        </div>
+        <div class="experience-section" id="tgd">
+          <h4>The Good Doctor Project</h4>
+          <p>After being granted access to Facebook's beta AR Studio I quickly had to learn how to use it and create an AR filter that included multiple elements and triggers for ABC. This was a particularly difficult project as we had many iterations and feedback and communication had to be planned well as we were working with a client in the US.</p>
+          <p>We also created a filter for TGIT and they were featured together on <a href="https://www.adweek.com/digital/abc-facebook-camera-effects-the-good-doctor-tgit/" target="_blank">adweek</a>.</p>
+          <div class="video-container">
+            <video src="videos/good_doctor_ar.mp4" controls></video>
+          </div>
+        </div>
+        <div class="experience-section" id="jlvr">
+          <h4>Justice League VR Project</h4>
+          <p>See the site <a href="https://dev.thinkjam.com/justice_league_vr/" target="_blank">here</a>. (You must select batman on the character selection page)</p>
+          <p>For a pitch I learnt A-Frame, a webVR framework, and created a point and shoot game in VR/360 for Justice League. It works in the browser, mobile and in google cardboard.</p>
+        </div>
+        <div class="experience-section">
+          <h4>The Greatest Showman Website Takeover</h4>
+          <p>See the ad showcased <a href="https://showcase.thinkjam.com/projects/the_greatest_showman/weischer/" target="_blank">here</a></p>
+        </div>
+      </div>
+    </div>
+
+<!--
+    <p>Think Jam</p>
+    <li>Day trip to netflix</li>
+
+
+
+
+    <p>Gamer Network</p> -->
+
+
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+  <script src="js/main.js" async></script>
+</body>
+</html>
