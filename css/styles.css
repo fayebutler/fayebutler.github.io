@@ -32,7 +32,6 @@ iframe {
   width:100%;
   display:flex;
   margin:0 auto;
-  /* text-align: center; */
 }
 .section {
   flex-direction:column;
@@ -40,10 +39,6 @@ iframe {
   margin:0 auto;
 }
 #header {
-  /* display:flex;
-  justify-content: center;
-  align-items: center; */
-  /* background-color:#585A56; */
   color:#fff;
   text-align: center;
   overflow:hidden;
@@ -54,6 +49,9 @@ iframe {
   height:100vh;
   background-color:#B46444;
   box-shadow: 0px 0px 15px 2px #939393;
+  display: flex;
+  flex-direction: column;
+  z-index:1; /** to cover video controls **/
 }
 #header a {
   color:#fff;
@@ -75,36 +73,9 @@ img {
   margin:0 5px;
 }
 
-
 .section-header {
   text-align:center;
 }
-.projects {
-  display:flex;
-  flex-wrap:wrap;
-}
-.project {
-  flex: 2 1 50%;
-}
-.project-desc {
-  display:none;
-}
-.fa-caret-right {
-  cursor:pointer;
-  transition-duration:0.2s;
-  -webkit-transition-duration:0.2s;
-  margin-right:5px;
-}
-.fa-caret-right.rotate {
-  transform:rotate(90deg);
-  -webkit-transform:rotate(90deg);
-}
-
-
-
-
-
-/** EXPERIENCE PAGE SPECIFIC **/
 
 .video-section {
   max-width:300px;
@@ -136,4 +107,50 @@ video {
 }
 .reload:hover {
   max-width:280px;
+}
+
+.vimeo-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.vimeo-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 700px) {
+  #header {
+    width:100%;
+    height:200px;
+    flex-direction:row;
+    justify-content: center;
+  }
+  #header-img {
+    width:auto;
+    height:180px;
+    margin:10px 20px;
+  }
+  #header-img img {
+    width:auto;
+    height:100%;
+  }
+  #main {
+    margin:0;
+    margin-top:200px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  #header-img {
+    display:none;
+  }
+  .vimeo {
+    height:auto;
+  }
 }
